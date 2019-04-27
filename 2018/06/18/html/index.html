@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="html浏览器内核 Trident(IE内核) Gecko(Firefox内核) Presto(Opera前内核) (已废弃) Webkit(Safari内核,Chrome内核原型,开源) Blink（chrome）最新国产  web标准 结构 html   超文本标记语言 表现 css     层叠样式表 行为 java script  脚本语言  文档类型&amp;lt;!DOCTYPE&amp;gt;标签位">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-25T14:56:12.254Z">
+<meta property="og:updated_time" content="2019-04-27T13:35:14.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html基础">
 <meta name="twitter:description" content="html浏览器内核 Trident(IE内核) Gecko(Firefox内核) Presto(Opera前内核) (已废弃) Webkit(Safari内核,Chrome内核原型,开源) Blink（chrome）最新国产  web标准 结构 html   超文本标记语言 表现 css     层叠样式表 行为 java script  脚本语言  文档类型&amp;lt;!DOCTYPE&amp;gt;标签位">
@@ -158,52 +158,27 @@
 <li>行为 java script  脚本语言</li>
 </ol>
 <h2 id="文档类型"><a href="#文档类型" class="headerlink" title="文档类型"></a>文档类型</h2><p>&lt;!DOCTYPE&gt;标签位于文档最前面，向浏览器说明当前文档使用HTML或XHTML标准规范，不然浏览器无法解析。</p>
-<h2 id="排版标签"><a href="#排版标签" class="headerlink" title="排版标签"></a>排版标签</h2><p>标题标签 <h1-h6>  h1一般用于logo<br>段落标签 <p><br>水平标签 <hr><br>换行标签<br><br>单独一行<div><br>一行显示<span></span></div></p>
-<h2 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h2><p><b> <strong>加粗<br><i> <em> 斜<br><s> <del> 删除<br><u> <ins> 下划线</ins></u></del></s></em></i></strong></b></p>
+<h2 id="排版标签"><a href="#排版标签" class="headerlink" title="排版标签"></a>排版标签</h2><p>标题标签<code>&lt;h1-h6&gt;</code>  h1一般用于logo<br>段落标签 <code>&lt;p&gt;</code><br>水平标签 <code>&lt;hr/&gt;</code><br>换行标签<code>&lt;br/&gt;</code><br>单独一行<code>&lt;div&gt;</code><br>一行显示<code>&lt;span&gt;</code></p>
+<h2 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span> <span class="tag">&lt;<span class="name">strong</span>&gt;</span> 加粗</span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span> <span class="tag">&lt;<span class="name">em</span>&gt;</span> 斜</span><br><span class="line"><span class="tag">&lt;<span class="name">s</span>&gt;</span> <span class="tag">&lt;<span class="name">del</span>&gt;</span>删除</span><br><span class="line"><span class="tag">&lt;<span class="name">u</span>&gt;</span> <span class="tag">&lt;<span class="name">ins</span>&gt;</span> 下划线</span><br></pre></td></tr></table></figure>
 <h2 id="的标签属性"><a href="#的标签属性" class="headerlink" title="的标签属性"></a><img>的标签属性</h2><p>src 地址<br>alt 图像不显示文本<br>title 悬停内容<br>border 图像边框厚度</p>
 <h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a><a><a>属性</a></a></h2><p>href #  跳转地址<br>target  _blank 新窗口打开 _self 不用新窗口打开<br>在head 中<base target="”_blank”/"> 整体用新窗口打开</p>
 <h3 id="锚点定位"><a href="#锚点定位" class="headerlink" title="锚点定位"></a>锚点定位</h3><p><a href="”#xx”" titel="”悬浮显示的内容”" alt="”不能显示图片显示的文字”"> //被点击<br>在元素<h1 id="”xx”">     //跳转至</h1></a></p>
 <h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><p>&amp;nbsp 空格<br>&amp;lt &lt;符号<br>&amp;gt &gt;符号</p>
-<h2 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h2><ol>
-<li>无序列表 <ul>  <li> </li>  </ul>   注意ul中不能放其他标签 li里面可以</li>
-<li>有序列表 <ol>  <li> </li>   </ol></li>
-<li>自定义  <dl>  <dt></dt>  <dd></dd>  </dl> 一个dt可以对应多个dd 多用于网页地部</li>
-</ol>
+<h2 id="列表标签"><a href="#列表标签" class="headerlink" title="列表标签"></a>列表标签</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.	无序列表 <span class="tag">&lt;<span class="name">ul</span>&gt;</span>  <span class="tag">&lt;<span class="name">li</span>&gt;</span> <span class="tag">&lt;/<span class="name">li</span>&gt;</span>  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>   注意ul中不能放其他标签 li里面可以</span><br><span class="line">2.	有序列表 <span class="tag">&lt;<span class="name">ol</span>&gt;</span>  <span class="tag">&lt;<span class="name">li</span>&gt;</span> <span class="tag">&lt;/<span class="name">li</span>&gt;</span>   <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">3.	自定义  <span class="tag">&lt;<span class="name">dl</span>&gt;</span>  <span class="tag">&lt;<span class="name">dt</span>&gt;</span><span class="tag">&lt;/<span class="name">dt</span>&gt;</span>  <span class="tag">&lt;<span class="name">dd</span>&gt;</span><span class="tag">&lt;/<span class="name">dd</span>&gt;</span>  <span class="tag">&lt;/<span class="name">dl</span>&gt;</span> 一个dt可以对应多个dd 多用于网页地部</span><br></pre></td></tr></table></figure>
 <h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>table属性<br>align 水平对齐方式  属性值center left right </p>
 <ol>
 <li>cellspacing单元格之间距离</li>
 <li>cellpadding内容距离单元格边框距离</li>
 <li>border 单元格边框 </li>
 </ol>
-<h5 id="注意-一般三参为0，放在table标签中"><a href="#注意-一般三参为0，放在table标签中" class="headerlink" title="注意 一般三参为0，放在table标签中"></a>注意 一般三参为0，放在table标签中</h5><p><caption> </caption> 表格标题 table中</p>
-<p><tr>       行<br> <td></td>  列 可以容纳所有元素<br></tr> </p>
-<p><th> 表头替换td  效果居中加粗</th></p>
-<p><thead></thead> 表头</p>
-<p><tbody></tbody> 表体</p>
+<h5 id="注意-一般三参为0，放在table标签中"><a href="#注意-一般三参为0，放在table标签中" class="headerlink" title="注意 一般三参为0，放在table标签中"></a>注意 一般三参为0，放在table标签中</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">caption</span>&gt;</span> <span class="tag">&lt;/<span class="name">caption</span>&gt;</span> 表格标题 table中</span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span>       行</span><br><span class="line"> <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span>  列 可以容纳所有元素</span><br><span class="line"><span class="tag">&lt;/<span class="name">tr</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">th</span>&gt;</span> 表头替换td  效果居中加粗</span><br><span class="line"><span class="tag">&lt;<span class="name">thead</span>&gt;</span><span class="tag">&lt;/<span class="name">thead</span>&gt;</span> 表头</span><br><span class="line"><span class="tag">&lt;<span class="name">tbody</span>&gt;</span><span class="tag">&lt;/<span class="name">tbody</span>&gt;</span> 表体</span><br></pre></td></tr></table></figure>
 <h3 id="合并单元格"><a href="#合并单元格" class="headerlink" title="合并单元格"></a>合并单元格</h3><p>rowspan 跨行  注意1 先跨列 2先上后下 先左后右<br>Colspan 跨列</p>
-<h2 id="input表单"><a href="#input表单" class="headerlink" title="input表单"></a>input表单</h2><p><input> 属性type   name 提交必须</p>
-<p><form></form> 属性 注意表单必须有form<br>action 提交url地址 echo $SERVER[PHP_SELF]  //提交本页<br>method 提交方式 get url地址栏提交提交   post<br>name 表单名<br>size      控件宽度<br>maxlenth 允许输入最多的字符数<br>Type属性值<br>text    文本域<br>password<br>radio 单选  name=”sex”分组<br>checkbox 复选name=”sex”分组<br>button  普通按钮 value=”注册”<br>submit 提交按钮value=”提交”<br>reset 重置<br>File 上传文件</p>
-<p><label for="xx"> <input id="xx"></label> 包含input 点用户名直接进文本框 for在lable包含多个input 进入id定义的input文本框</p>
-<p><textarea> </textarea>文本域</p>
-<p><button></button>   //提交按钮</p>
-<h2 id="下拉菜单"><a href="#下拉菜单" class="headerlink" title="下拉菜单"></a>下拉菜单</h2><section>  默认选择<br>    <option value selected="selected"></option> 默认选中<br>  </section>
+<h2 id="input表单"><a href="#input表单" class="headerlink" title="input表单"></a>input表单</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> /&gt;</span> 属性type   name 提交必须</span><br><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span> 属性 注意表单必须有form</span><br><span class="line">action 提交url地址 echo $SERVER[PHP_SELF]  //提交本页</span><br><span class="line">method 提交方式 get url地址栏提交提交   post</span><br><span class="line">name 表单名</span><br><span class="line">size      控件宽度</span><br><span class="line">maxlenth 允许输入最多的字符数</span><br><span class="line">Type属性值</span><br><span class="line">text    文本域  </span><br><span class="line">password  </span><br><span class="line">radio 单选  name=”sex”分组</span><br><span class="line">checkbox 复选name=”sex”分组</span><br><span class="line">button  普通按钮 value=”注册”</span><br><span class="line">submit 提交按钮value=”提交”</span><br><span class="line">reset 重置</span><br><span class="line">File 上传文件</span><br><span class="line"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"xx"</span>&gt;</span> <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">"xx"</span>&gt;</span><span class="tag">&lt;/<span class="name">label</span>&gt;</span> 包含input 点用户名直接进文本框 for在lable包含多个input 进入id定义的input文本框</span><br><span class="line"><span class="tag">&lt;<span class="name">textarea</span>&gt;</span> <span class="tag">&lt;/<span class="name">textarea</span>&gt;</span>文本域</span><br><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span>   //提交按钮</span><br></pre></td></tr></table></figure>
+<h2 id="下拉菜单"><a href="#下拉菜单" class="headerlink" title="下拉菜单"></a>下拉菜单</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">section</span>&gt;</span>  默认选择</span><br><span class="line">    <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">""</span> <span class="attr">selected</span>=<span class="string">"selected"</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span> 默认选中</span><br><span class="line">  <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-</h1-h6></p>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年04月25日 22:56</p>
+        <p>最后更新： 2019年04月27日 21:35</p>
         <p>原始链接： <a class="post-url" href="/2018/06/18/html/" title="html基础">http://yoursite.com/2018/06/18/html/</a></p>
         <footer>
             <a href="http://yoursite.com">
