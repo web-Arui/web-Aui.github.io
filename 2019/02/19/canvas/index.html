@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="基本的123先在body里面加上 &amp;lt;canvas width=&apos;宽度&apos; height=&apos;高度&apos;&amp;gt;&amp;lt;/canvas&amp;gt;注意:不能在样式里面设置canvas的宽高然后: 12345678var myCanvas = document.querySelector(&apos;canvas&apos;) //获取元素var ctx = myCanvas.getContext(&apos;2d&apos;) //获取上下文">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-04T14:27:11.223Z">
+<meta property="og:updated_time" content="2019-05-06T14:28:12.268Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="canvas 基础">
 <meta name="twitter:description" content="基本的123先在body里面加上 &amp;lt;canvas width=&apos;宽度&apos; height=&apos;高度&apos;&amp;gt;&amp;lt;/canvas&amp;gt;注意:不能在样式里面设置canvas的宽高然后: 12345678var myCanvas = document.querySelector(&apos;canvas&apos;) //获取元素var ctx = myCanvas.getContext(&apos;2d&apos;) //获取上下文">
@@ -147,10 +147,20 @@
             
             <h2 id="基本的"><a href="#基本的" class="headerlink" title="基本的"></a>基本的</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">先在body里面加上 <span class="tag">&lt;<span class="name">canvas</span> <span class="attr">width</span>=<span class="string">'宽度'</span> <span class="attr">height</span>=<span class="string">'高度'</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br><span class="line">注意:不能在样式里面设置canvas的宽高</span><br><span class="line">然后:</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myCanvas = <span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>) <span class="comment">//获取元素</span></span><br><span class="line"><span class="keyword">var</span> ctx = myCanvas.getContext(<span class="string">'2d'</span>) <span class="comment">//获取上下文 绘制工具箱</span></span><br><span class="line">ctx.beginPath()<span class="comment">//开启新路径</span></span><br><span class="line">ctx.moveTo(<span class="number">100</span>,<span class="number">100</span>) <span class="comment">//移动画笔</span></span><br><span class="line">ctx.lineTo(<span class="number">200</span>,<span class="number">100</span>) <span class="comment">//绘制直线 (轨迹，绘制路径)</span></span><br><span class="line">ctx.strokeStyle=<span class="string">'red'</span> <span class="comment">//线条颜色</span></span><br><span class="line">ctx.lineWidth=<span class="number">30</span> <span class="comment">//线条宽度</span></span><br><span class="line">ctx.stroke() <span class="comment">// 描边</span></span><br></pre></td></tr></table></figure>
+<h3 id="ctx-closePath-自动填充路径"><a href="#ctx-closePath-自动填充路径" class="headerlink" title="ctx.closePath()自动填充路径"></a>ctx.closePath()自动填充路径</h3><h3 id="ctx-fillstyle-”red”填充颜色"><a href="#ctx-fillstyle-”red”填充颜色" class="headerlink" title="ctx.fillstyle=”red”填充颜色"></a>ctx.fillstyle=”red”填充颜色</h3><h3 id="ctx-fill-填充-默认是黑色"><a href="#ctx-fill-填充-默认是黑色" class="headerlink" title="ctx.fill()填充 默认是黑色"></a>ctx.fill()填充 默认是黑色</h3><ol>
+<li>看一块区域是否填充</li>
+<li>从这快区域拉一条直线</li>
+<li>看这条直线的相交轨迹</li>
+<li>如果顺时针+1</li>
+<li>如果逆时针-1</li>
+<li>所有的轨迹的值计算出来</li>
+<li>如果是非0就填充</li>
+<li>如果是0就不填充</li>
+</ol>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年05月04日 22:27</p>
+        <p>最后更新： 2019年05月06日 22:28</p>
         <p>原始链接： <a class="post-url" href="/2019/02/19/canvas/" title="canvas 基础">http://yoursite.com/2019/02/19/canvas/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -261,7 +271,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本的"><span class="post-toc-text">基本的</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本的"><span class="post-toc-text">基本的</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ctx-closePath-自动填充路径"><span class="post-toc-text">ctx.closePath()自动填充路径</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ctx-fillstyle-”red”填充颜色"><span class="post-toc-text">ctx.fillstyle=”red”填充颜色</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#ctx-fill-填充-默认是黑色"><span class="post-toc-text">ctx.fill()填充 默认是黑色</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
