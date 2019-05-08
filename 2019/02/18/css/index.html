@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="CSS初识CSS(Cascading Style Sheets)    美化样式 CSS通常称为CSS样式表或层叠样式表（级联样式表），主要用于设置HTML页面中的文本内容（字体、大小、对齐方式等）、图片的外形（宽高、边框样式、边距等）以及版面的布局等外观显示样式。 CSS以HTML为基础，提供了丰富的功能，如字体、颜色、背景的控制及整体排版等，而且还可以针对不同的浏览器设置不同的样式。 css层">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-03T14:18:53.112Z">
+<meta property="og:updated_time" content="2019-05-08T14:44:08.354Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css基础">
 <meta name="twitter:description" content="CSS初识CSS(Cascading Style Sheets)    美化样式 CSS通常称为CSS样式表或层叠样式表（级联样式表），主要用于设置HTML页面中的文本内容（字体、大小、对齐方式等）、图片的外形（宽高、边框样式、边距等）以及版面的布局等外观显示样式。 CSS以HTML为基础，提供了丰富的功能，如字体、颜色、背景的控制及整体排版等，而且还可以针对不同的浏览器设置不同的样式。 css层">
@@ -190,10 +190,15 @@
 <p>链接伪类选择器<br>:link 未访问的链接<br>:visited 已访问的链接<br>:hover鼠标经过的链接 实际开发只用hover<br>:active 鼠标按住链接</p>
 <h2 id="字体行高"><a href="#字体行高" class="headerlink" title="字体行高"></a>字体行高</h2><p>顶线   中线   基线   底线<br>两行文字基线与基线之间的距离就是行高<br>盒子高度等于 字体高度 上距离 下距离<br>行高等于高度 垂直居中<br>行高大于高度 偏下<br>行高小于高度 偏上</p>
 <h2 id="font样式"><a href="#font样式" class="headerlink" title="font样式"></a>font样式</h2><p>font-style normal正常 italic斜体 字体风格 i em配合<br>font-weight  bold==700加粗 normal==400 正常 数值没有单位 建议用数值  字体粗细 b strong 配合<br>font-size  字体大小<br>font-family:字体1 ,字体2  什么字体<br>1多个字体执行从左开始<br>2当没有才执行其他，都没有执行系统默认<br>3中文或者有空格特殊字符的 用双引号<br>连写 不能更换顺序h {font: font-style font-weight font-size/line-height font-family;} 注意字体大小不能省略</p>
+<h2 id="css外观样式"><a href="#css外观样式" class="headerlink" title="css外观样式"></a>css外观样式</h2><p>color   #红色 绿色 蓝色    red green blue<br>line-height px em  行间距 行高等于盒子的高度 可以让单行文本垂直居中<br>text-align 水平对齐 left right center 盒子内容对齐 （文字 行内元素 行内块元素）<br>text-indent 2em 首行缩进  em一个字的距离<br>注意以上都能继承<br>text-decoration  none无装饰 underline 下划线 line-through 贯穿线 u ins 配合 s del 配合</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>background-color<br>background-image：url(images/1.png )</p>
+<p>background-repeat  属性值<br>bepeat 背景纵横平铺<br>no-repeat 背景不平铺<br>repeat-x 背景横向平铺<br>repeat-y 背景纵向平铺<br>background –attachment 属性值 （一般做网页背景）<br>fixed 背景图固定<br>scroll 背景图滚动<br>background-position: x y<br>1后面可以跟方位名词 上下左右没有顺序<br>2一个值 另一个值垂直居中<br>3后面可以跟px值    12px 22px x y</p>
+<p>连写 没有顺序要求 建议<br>background：背景颜色 背景图片地址  背景平铺 背景滚动 背景位置<br>background：rgba(0,0,0,0.5)   写法 0至1  背景透明度</p>
+<h2 id="圆角边框-css3"><a href="#圆角边框-css3" class="headerlink" title="圆角边框(css3)"></a>圆角边框(css3)</h2><p>border-radius: 50%; 让正方形变成圆 等于宽高同样变圆<br>border-radius: 1 2 3 4   1左上 2右上 3右下 4左下 顺时针<br>border-radius:1 2 3  1左上 2右上 左下 3 右下<br>border-radius:1 2  1 左上 右下  2右上 左下 对角线</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年05月03日 22:18</p>
+        <p>最后更新： 2019年05月08日 22:44</p>
         <p>原始链接： <a class="post-url" href="/2019/02/18/css/" title="css基础">http://yoursite.com/2019/02/18/css/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -304,7 +309,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS初识"><span class="post-toc-text">CSS初识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#css层叠样式的有"><span class="post-toc-text">css层叠样式的有</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#css文件中引入css文件"><span class="post-toc-text">css文件中引入css文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#选择器"><span class="post-toc-text">选择器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#css基础选择器"><span class="post-toc-text">css基础选择器</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字体行高"><span class="post-toc-text">字体行高</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#font样式"><span class="post-toc-text">font样式</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CSS初识"><span class="post-toc-text">CSS初识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#css层叠样式的有"><span class="post-toc-text">css层叠样式的有</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#css文件中引入css文件"><span class="post-toc-text">css文件中引入css文件</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#选择器"><span class="post-toc-text">选择器</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#css基础选择器"><span class="post-toc-text">css基础选择器</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字体行高"><span class="post-toc-text">字体行高</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#font样式"><span class="post-toc-text">font样式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#css外观样式"><span class="post-toc-text">css外观样式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#背景"><span class="post-toc-text">背景</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#圆角边框-css3"><span class="post-toc-text">圆角边框(css3)</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
