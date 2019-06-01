@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-31T14:43:27.398Z">
+<meta property="og:updated_time" content="2019-06-01T13:51:19.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue基础">
 <meta name="twitter:description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
@@ -148,10 +148,13 @@
             <h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>建一个文件夹<br>npm init<br>npm i express框架  npm i nodemon方便好启动<br>在建一个入口文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'holle word!'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> port = process.env.PORT || <span class="number">5000</span></span><br><span class="line">app.listen(port, ()=&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`this <span class="subst">$&#123;port&#125;</span>`</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <p>然后在进入package.json修改<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "strat": "node server.js",</span><br><span class="line">    "server":"nodemon server.js"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
 <p>就可以npm run server启动</p>
+<h2 id="连接mongodb"><a href="#连接mongodb" class="headerlink" title="连接mongodb"></a>连接mongodb</h2><p>npm i mongoose<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mongoose =  <span class="built_in">require</span>(<span class="string">'mongoose'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>建个文件夹<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  mongoURI:<span class="string">"mongodb+srv://web-Arui:mima@cluster0-cssww.azure.mongodb.net/test?retryWrites=true&amp;w=majority"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>引入<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> db = <span class="built_in">require</span>(<span class="string">"./config/keys.js"</span>).mongoURI</span><br><span class="line">mongoose.connect(db)</span><br><span class="line">  .then(<span class="function"><span class="params">()</span>=&gt;</span><span class="built_in">console</span>.log(<span class="string">'res'</span>))</span><br><span class="line">  .catch(<span class="function"><span class="params">err</span>=&gt;</span><span class="built_in">console</span>.log(err))</span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'holle word!'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年05月31日 22:43</p>
+        <p>最后更新： 2019年06月01日 21:51</p>
         <p>原始链接： <a class="post-url" href="/2019/05/13/node/" title="vue基础">http://yoursite.com/2019/05/13/node/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -262,7 +265,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动"><span class="post-toc-text">启动</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动"><span class="post-toc-text">启动</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#连接mongodb"><span class="post-toc-text">连接mongodb</span></a></li></ol>
         </nav>
     </aside>
     
