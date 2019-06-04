@@ -3,22 +3,22 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>node接口 | Hexo</title>
+  <title>es6 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="MinHow,MinHow's Blog">
   
-  <meta name="description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
+  <meta name="description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node接口">
-<meta property="og:url" content="http://yoursite.com/2019/05/13/node/index.html">
+<meta property="og:title" content="es6">
+<meta property="og:url" content="http://yoursite.com/2019/05/12/es6/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
+<meta property="og:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-03T14:40:35.717Z">
+<meta property="og:updated_time" content="2019-06-04T14:27:41.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node接口">
-<meta name="twitter:description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
+<meta name="twitter:title" content="es6">
+<meta name="twitter:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -109,14 +109,14 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-node" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-es6" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      node接口
+      es6
     </h1>
     <div class="post-title-bar">
       <ul>
@@ -129,7 +129,7 @@
               </li>
           
         <li>
-          <i class="fa fa-calendar"></i>  2019-05-13
+          <i class="fa fa-calendar"></i>  2019-05-12
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -145,17 +145,14 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>建一个文件夹<br>npm init<br>npm i express框架  npm i nodemon方便好启动<br>在建一个入口文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'holle word!'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> port = process.env.PORT || <span class="number">5000</span></span><br><span class="line">app.listen(port, ()=&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`this <span class="subst">$&#123;port&#125;</span>`</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p>然后在进入package.json修改<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "strat": "node server.js",</span><br><span class="line">    "server":"nodemon server.js"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
-<p>就可以npm run server启动</p>
-<h2 id="连接mongodb"><a href="#连接mongodb" class="headerlink" title="连接mongodb"></a>连接mongodb</h2><p>npm i mongoose<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mongoose =  <span class="built_in">require</span>(<span class="string">'mongoose'</span>)</span><br></pre></td></tr></table></figure></p>
-<p>建个文件夹<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  mongoURI:<span class="string">"mongodb+srv://web-Arui:mima@cluster0-cssww.azure.mongodb.net/test?retryWrites=true&amp;w=majority"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>引入<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> db = <span class="built_in">require</span>(<span class="string">"./config/keys.js"</span>).mongoURI</span><br><span class="line">mongoose.connect(db)</span><br><span class="line">  .then(<span class="function"><span class="params">()</span>=&gt;</span><span class="built_in">console</span>.log(<span class="string">'res'</span>))</span><br><span class="line">  .catch(<span class="function"><span class="params">err</span>=&gt;</span><span class="built_in">console</span>.log(err))</span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'holle word!'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+            <h2 id="let-const"><a href="#let-const" class="headerlink" title="let const"></a>let const</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="comment">//块级作用域</span></span><br><span class="line">	<span class="keyword">let</span> a=<span class="number">1</span></span><br><span class="line">	<span class="keyword">const</span> b=<span class="number">1</span></span><br><span class="line">	<span class="comment">//里面可以访问，外面不能访问</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>let注意：<br>1.没有域解析，不存在变量提升<br>    在代码快内，只要let定义变量,在之前使用，都是报错<br>    先定义，在使用<br>2.同一个作用域里，不能重复定义变量<br>3.for循环，for循环里面是父级作用域，里面又一个块级作用域</p>
+<p>const注意：<br>const特性和let一样<br>const定义完变量，必须有值，不能后赋值，不能修改<br>Object,freeze(对象)锁定这个对象，不能进行增加减少</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年06月03日 22:40</p>
-        <p>原始链接： <a class="post-url" href="/2019/05/13/node/" title="node接口">http://yoursite.com/2019/05/13/node/</a></p>
+        <p>最后更新： 2019年06月04日 22:27</p>
+        <p>原始链接： <a class="post-url" href="/2019/05/12/es6/" title="es6">http://yoursite.com/2019/05/12/es6/</a></p>
         <footer>
             <a href="http://yoursite.com">
                 <img src="/images/logo.png" alt="John Doe">
@@ -212,7 +209,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/05/13/node/&title=《node接口》 — Hexo&pic=/images/1.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/05/12/es6/&title=《es6》 — Hexo&pic=/images/1.png" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -222,22 +219,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/05/13/node/&title=《node接口》 — Hexo&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/05/12/es6/&title=《es6》 — Hexo&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/05/13/node/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/05/12/es6/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《node接口》 — Hexo&url=http://yoursite.com/2019/05/13/node/&via=http://yoursite.com" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《es6》 — Hexo&url=http://yoursite.com/2019/05/12/es6/&via=http://yoursite.com" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/05/13/node/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/05/12/es6/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -247,7 +244,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/05/13/node/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2019/05/12/es6/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -265,16 +262,26 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动"><span class="post-toc-text">启动</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#连接mongodb"><span class="post-toc-text">连接mongodb</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#let-const"><span class="post-toc-text">let const</span></a></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
+    <a href="/2019/05/13/node/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          node接口
+        
+      </span>
+    </a>
   
-    <a href="/2019/05/12/es6/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">es6</span>
+  
+    <a href="/2019/05/12/vue/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">vue基础</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
