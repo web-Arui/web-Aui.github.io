@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-05T14:26:11.554Z">
+<meta property="og:updated_time" content="2019-06-06T09:58:09.797Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="es6">
 <meta name="twitter:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
@@ -150,10 +150,26 @@
 <p>const注意：<br>const特性和let一样<br>const定义完变量，必须有值，不能后赋值，不能修改<br>Object,freeze(对象)锁定这个对象，不能进行增加减少</p>
 <h2 id="结构赋值"><a href="#结构赋值" class="headerlink" title="结构赋值"></a>结构赋值</h2><pre><code>非常有用，特别在做交互ajax
 </code></pre><p>let[a,b,c] = [2,3,4]<br>注意，左右两边，结构格式保持一致<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> json =&#123;</span><br><span class="line">      name:<span class="string">'11'</span>,</span><br><span class="line">      age:<span class="string">'ee'</span>,</span><br><span class="line">      ttt:<span class="string">'sss'</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> &#123;name,age,ttt&#125; = json</span><br><span class="line">    <span class="built_in">console</span>.log(name,age,ttt)</span><br><span class="line">	<span class="keyword">let</span> &#123;<span class="attr">name</span>:a,<span class="attr">age</span>:b,<span class="attr">ttt</span>:c&#125; = json</span><br><span class="line">	<span class="built_in">console</span>.log(a,b,c) <span class="comment">//这样也是一样的</span></span><br></pre></td></tr></table></figure></p>
-
+<h2 id="字符串模板"><a href="#字符串模板" class="headerlink" title="字符串模板"></a>字符串模板</h2><p>优点：可以随意换行<br>使用：<code>${变量名字}</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name=<span class="number">11</span></span><br><span class="line">    <span class="keyword">let</span> age=<span class="number">13</span></span><br><span class="line">    <span class="keyword">let</span> src = <span class="string">`这个人叫<span class="subst">$&#123;name&#125;</span>,年龄<span class="subst">$&#123;age&#125;</span>`</span></span><br><span class="line">    <span class="built_in">console</span>.log(src)</span><br></pre></td></tr></table></figure></p>
+<h4 id="关于字符串一些东西"><a href="#关于字符串一些东西" class="headerlink" title="关于字符串一些东西"></a>关于字符串一些东西</h4><pre><code>字符串查找：
+            str.indexOf(要找的东西)  返回索引（位置） 没有找到返回-1
+            str.includes(要找的东西) 返回值 true/fales
+            可以用来判断浏览器 ：includes
+字符串是否以谁开头
+        列如:http://www.xx.xx
+        str.startsWith(检测东西)
+字符串是否以谁结尾
+        例如：.png
+        str.endsWidh(检测东西)
+重复字符串
+        str.repeat(重复的次数)
+填充字符串
+        str.padStart(填充过后字符串长度,往前填充的东西)
+        str.padEnd(填充过后字符串长度, 往后填充的东西)
+</code></pre>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年06月05日 22:26</p>
+        <p>最后更新： 2019年06月06日 17:58</p>
         <p>原始链接： <a class="post-url" href="/2019/05/12/es6/" title="es6">http://yoursite.com/2019/05/12/es6/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -264,7 +280,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#let-const"><span class="post-toc-text">let const</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结构赋值"><span class="post-toc-text">结构赋值</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#let-const"><span class="post-toc-text">let const</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结构赋值"><span class="post-toc-text">结构赋值</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符串模板"><span class="post-toc-text">字符串模板</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#关于字符串一些东西"><span class="post-toc-text">关于字符串一些东西</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
