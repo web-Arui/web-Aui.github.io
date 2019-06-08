@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-07T13:55:23.517Z">
+<meta property="og:updated_time" content="2019-06-08T07:56:05.904Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="es6">
 <meta name="twitter:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
@@ -187,10 +187,12 @@
 7arr.redrceRight()//从右往左
 </code></pre><p>es6增加的<br>for..of…<br>        arr.keys() 数值的下标<br>        arr.entries()  数组的某一项<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>]</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> val <span class="keyword">of</span> arr)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(val)</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
 <p>Array.from:<br>        作用:把把类数组（获取一组元素，arguments..）对象转成数组<br>        个人观点：具备length这个东西，就靠谱<br>Array.of()<br>        把一组值，转成数组<br>        let arr = Array.of(‘a’,’b’,’c’)<br>        console.log(arr)<br>arr.find()<br>        查找 找出第一个符合条件的数组成员，如果没找到返回undefined<br>arr.findIndex()<br>        找的是位置（索引），没有找到返回-1<br>arr.fill()  填充<br>    arr.fill(填充的东西，开始的位置，结束的位置)</p>
+<h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><p>import 特点<br>    a) import 可以是相对路径 ，也可以是绝对路劲<br>    b) import 模块只会导入一次，无论你引多少次<br>    c) import ‘./views/1.js’, 如果这么用，相当于引入文件<br>    d)有提升效果，import会自动提升到顶部,首行执行<br>    e) 导出去的模块类容，如果里面有定时器更改，外面也会改动，不想Common规范存</p>
+<p>import()类似node里面的require,可以动态引入，默认Import语法不能写在if之类里面<br>        返回值，是个promise对象<br>        import(‘./views/1.js’).thien(res=&gt;{<br>            console.log(res.a+res.b)<br>    })</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年06月07日 21:55</p>
+        <p>最后更新： 2019年06月08日 15:56</p>
         <p>原始链接： <a class="post-url" href="/2019/05/12/es6/" title="es6">http://yoursite.com/2019/05/12/es6/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -301,7 +303,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#let-const"><span class="post-toc-text">let const</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结构赋值"><span class="post-toc-text">结构赋值</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符串模板"><span class="post-toc-text">字符串模板</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#关于字符串一些东西"><span class="post-toc-text">关于字符串一些东西</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数变化"><span class="post-toc-text">函数变化</span></a></li>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#let-const"><span class="post-toc-text">let const</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结构赋值"><span class="post-toc-text">结构赋值</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符串模板"><span class="post-toc-text">字符串模板</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#关于字符串一些东西"><span class="post-toc-text">关于字符串一些东西</span></a></li></ol></li></ol><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数变化"><span class="post-toc-text">函数变化</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模块化"><span class="post-toc-text">模块化</span></a></li>
         </nav>
     </aside>
     
