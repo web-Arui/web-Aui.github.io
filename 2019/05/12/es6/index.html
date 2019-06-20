@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-19T14:12:48.607Z">
+<meta property="og:updated_time" content="2019-06-20T14:38:12.999Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="es6">
 <meta name="twitter:description" content="let const123456&amp;#123;	//块级作用域	let a=1	const b=1	//里面可以访问，外面不能访问&amp;#125; let注意：1.没有域解析，不存在变量提升    在代码快内，只要let定义变量,在之前使用，都是报错    先定义，在使用2.同一个作用域里，不能重复定义变量3.for循环，for循环里面是父级作用域，里面又一个块级作用域 const注意：const特性和l">
@@ -206,10 +206,18 @@
 number.isNaN(NaN)    true
 number.isFinite(a)   判断是不是数字
 number.isInteger(a)   判断数字是不是整数
+安全整数
+-（2的53次方-1）到2的53次方-1
+number.MAX_SAFE_INTEGER 最大的安全整数
+number.MIN_SAFE_INTEGER 最小的安全整数
+
+Math.trunc() 截取 只保留整数部分
+Math.sign()  判断一个数是正数（1）还是负数（-1）零（0）其他值返回NaN
+Math.cbrt()  计算一个立方根
 </code></pre>
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年06月19日 22:12</p>
+        <p>最后更新： 2019年06月20日 22:38</p>
         <p>原始链接： <a class="post-url" href="/2019/05/12/es6/" title="es6">http://yoursite.com/2019/05/12/es6/</a></p>
         <footer>
             <a href="http://yoursite.com">
