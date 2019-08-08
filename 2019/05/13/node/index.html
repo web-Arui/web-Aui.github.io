@@ -8,17 +8,17 @@
   
     <meta name="keywords" content="MinHow,MinHow's Blog">
   
-  <meta name="description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
+  <meta name="description" content="基础12345678var http = require(&apos;http&apos;)http.createServer(function(req,res)&amp;#123;  res.writeHead(200,&amp;#123;&quot;Content-Type&quot;:&quot;text/html;charset=utf8&quot;&amp;#125;)  res.write(&apos;你好,node.js&apos;)  res.end()&amp;#125;).listen(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="node接口">
 <meta property="og:url" content="http://yoursite.com/2019/05/13/node/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
+<meta property="og:description" content="基础12345678var http = require(&apos;http&apos;)http.createServer(function(req,res)&amp;#123;  res.writeHead(200,&amp;#123;&quot;Content-Type&quot;:&quot;text/html;charset=utf8&quot;&amp;#125;)  res.write(&apos;你好,node.js&apos;)  res.end()&amp;#125;).listen(">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-03T14:40:35.717Z">
+<meta property="og:updated_time" content="2019-08-08T12:27:27.818Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="node接口">
-<meta name="twitter:description" content="启动建一个文件夹npm initnpm i express框架  npm i nodemon方便好启动在建一个入口文件123456789const express = require(&apos;express&apos;)const app = express()app.get(&apos;/&apos;,(req,res)=&amp;gt;&amp;#123;  res.send(&apos;holle word!&apos;)&amp;#125;)const port =">
+<meta name="twitter:description" content="基础12345678var http = require(&apos;http&apos;)http.createServer(function(req,res)&amp;#123;  res.writeHead(200,&amp;#123;&quot;Content-Type&quot;:&quot;text/html;charset=utf8&quot;&amp;#125;)  res.write(&apos;你好,node.js&apos;)  res.end()&amp;#125;).listen(">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -145,7 +145,8 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>建一个文件夹<br>npm init<br>npm i express框架  npm i nodemon方便好启动<br>在建一个入口文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'holle word!'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> port = process.env.PORT || <span class="number">5000</span></span><br><span class="line">app.listen(port, ()=&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`this <span class="subst">$&#123;port&#125;</span>`</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+            <h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>)</span><br><span class="line">http.createServer(<span class="function"><span class="keyword">function</span>(<span class="params">req,res</span>)</span>&#123;</span><br><span class="line">  res.writeHead(<span class="number">200</span>,&#123;<span class="string">"Content-Type"</span>:<span class="string">"text/html;charset=utf8"</span>&#125;)</span><br><span class="line">  res.write(<span class="string">'你好,node.js'</span>)</span><br><span class="line">  res.end()</span><br><span class="line">&#125;).listen(<span class="number">3000</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'3000'</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>建一个文件夹<br>npm init<br>npm i express框架  npm i nodemon方便好启动<br>在建一个入口文件<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">'express'</span>)</span><br><span class="line"><span class="keyword">const</span> app = express()</span><br><span class="line">app.get(<span class="string">'/'</span>,(req,res)=&gt;&#123;</span><br><span class="line">  res.send(<span class="string">'holle word!'</span>)</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">const</span> port = process.env.PORT || <span class="number">5000</span></span><br><span class="line">app.listen(port, ()=&gt;&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`this <span class="subst">$&#123;port&#125;</span>`</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <p>然后在进入package.json修改<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">    "strat": "node server.js",</span><br><span class="line">    "server":"nodemon server.js"</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure></p>
 <p>就可以npm run server启动</p>
 <h2 id="连接mongodb"><a href="#连接mongodb" class="headerlink" title="连接mongodb"></a>连接mongodb</h2><p>npm i mongoose<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mongoose =  <span class="built_in">require</span>(<span class="string">'mongoose'</span>)</span><br></pre></td></tr></table></figure></p>
@@ -154,7 +155,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2019年06月03日 22:40</p>
+        <p>最后更新： 2019年08月08日 20:27</p>
         <p>原始链接： <a class="post-url" href="/2019/05/13/node/" title="node接口">http://yoursite.com/2019/05/13/node/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -265,7 +266,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动"><span class="post-toc-text">启动</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#连接mongodb"><span class="post-toc-text">连接mongodb</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基础"><span class="post-toc-text">基础</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动"><span class="post-toc-text">启动</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#连接mongodb"><span class="post-toc-text">连接mongodb</span></a></li></ol>
         </nav>
     </aside>
     
@@ -283,8 +284,8 @@
     </a>
   
   
-    <a href="/2019/05/12/react/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">react</span>
+    <a href="/2019/05/12/mongodb/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">mongodb</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
